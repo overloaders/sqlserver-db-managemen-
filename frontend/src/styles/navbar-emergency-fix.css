@@ -1,0 +1,143 @@
+/* Emergency Fix for Navbar Fixed Positioning */
+
+/* Force navbar to stay fixed with maximum specificity */
+html body .wrapper .main-header.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 999999 !important;
+  transform: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+  background: #fff !important;
+  height: 57px !important;
+}
+
+/* Override any Bootstrap styles that might conflict */
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 999999 !important;
+  transform: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.navbar-expand {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 999999 !important;
+}
+
+.navbar-white {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 999999 !important;
+}
+
+.navbar-light {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 999999 !important;
+}
+
+/* Ensure no animations or transitions affect the navbar */
+.main-header,
+.navbar,
+.navbar-expand,
+.navbar-white,
+.navbar-light {
+  animation: none !important;
+  transition: none !important;
+  will-change: auto !important;
+  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible !important;
+}
+
+/* Force body to not scroll */
+body {
+  overflow: hidden !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 57px 0 0 0 !important; /* Padding top for header */
+}
+
+/* Force wrapper to handle layout properly */
+.wrapper {
+  height: 100vh !important;
+  overflow: hidden !important;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Force content wrapper to scroll independently */
+.content-wrapper {
+  height: calc(100vh - 57px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  position: relative !important;
+  margin-left: 250px !important;
+  -webkit-overflow-scrolling: touch !important;
+  overscroll-behavior: contain !important;
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 991.98px) {
+  .content-wrapper {
+    margin-left: 0 !important;
+    height: calc(100vh - 57px) !important;
+  }
+  
+  body {
+    padding: 57px 0 0 0 !important;
+  }
+}
+
+/* Ensure sidebar doesn't interfere */
+.main-sidebar {
+  position: fixed !important;
+  top: 57px !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  z-index: 1039 !important;
+  transform: none !important;
+  height: calc(100vh - 57px) !important;
+}
+
+/* Footer positioning */
+.main-footer {
+  position: relative !important;
+  margin-left: 250px !important;
+  z-index: 1 !important;
+}
+
+@media (max-width: 991.98px) {
+  .main-footer {
+    margin-left: 0 !important;
+  }
+}
+
+/* Test visibility - temporary to confirm CSS is loaded */
+.main-header::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  width: 10px !important;
+  height: 10px !important;
+  background: red !important;
+  z-index: 9999999 !important;
+}

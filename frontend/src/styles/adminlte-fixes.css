@@ -1,0 +1,2305 @@
+/* Custom CSS to fix AdminLTE styling issues */
+
+/* Fix layout spacing and alignment */
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  min-height: calc(100vh - 57px - 49px) !important;
+  padding-top: 0 !important;
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+  width: calc(100% - 250px);
+  max-width: none !important;
+}
+
+/* Fix for mobile layout issues */
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Fix content area to use full width */
+.content {
+  padding: 1rem 0.5rem;
+  min-height: calc(100vh - 57px - 49px - 120px);
+  width: 100%;
+  max-width: none !important;
+}
+
+/* Fix spacing issues */
+.content-header {
+  padding: 1rem 0.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Fix card spacing */
+.card {
+  margin-bottom: 1rem !important;
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2) !important;
+}
+
+.card-header {
+  padding: 0.75rem 1rem !important;
+}
+
+.card-body {
+  padding: 1rem !important;
+}
+
+/* Fix small box spacing */
+.small-box {
+  margin-bottom: 1rem !important;
+  border-radius: 0.25rem !important;
+}
+
+.small-box > .inner {
+  padding: 1rem !important;
+}
+
+/* Remove unwanted margins */
+.container-fluid.px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.row.mx-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.col-12.px-2 {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+/* Fix row and column spacing */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-header {
+  border-bottom: 1px solid #dee2e6;
+  z-index: 1034;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 57px;
+}
+
+.main-sidebar {
+  position: fixed;
+  top: 57px;
+  left: 0;
+  height: calc(100vh - 57px) !important;
+  width: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1033;
+}
+
+/* Fix sidebar navigation */
+.nav-sidebar .nav-link {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.nav-sidebar .nav-link p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.nav-header {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6c757d;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+}
+
+/* Fix breadcrumb spacing */
+.content-header {
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix card spacing */
+.card {
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+/* Fix small boxes */
+.small-box {
+  border-radius: 0.25rem;
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+  margin-bottom: 1.5rem;
+}
+
+.small-box > .inner {
+  padding: 1.5rem;
+}
+
+.small-box .icon {
+  top: 1rem;
+  right: 1rem;
+  font-size: 4rem;
+  color: rgba(0,0,0,.15);
+}
+
+/* Fix login page */
+.login-page {
+  background-color: #e9ecef;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Login page responsive improvements */
+@media (max-width: 575.98px) {
+  .login-box {
+    max-width: 100%;
+  }
+  
+  .login-logo {
+    font-size: 1.8rem;
+  }
+  
+  .login-card-body {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .login-box {
+    max-width: 350px;
+  }
+}
+
+.login-logo {
+  font-size: 2.1rem;
+  font-weight: 300;
+  margin-bottom: 0.9rem;
+  text-align: center;
+}
+
+/* Fix table spacing */
+.table-responsive {
+  margin-top: 1rem;
+  border: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table th {
+  border-top: 0;
+  font-weight: 600;
+}
+
+/* Mobile table improvements */
+@media (max-width: 767.98px) {
+  .table-responsive table {
+    font-size: 0.8rem;
+  }
+  
+  .table-responsive .btn-group-sm > .btn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+  
+  .table-responsive .btn-xs {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.3rem;
+  }
+  
+  /* Force horizontal scroll on mobile */
+  .table-responsive {
+    overflow-x: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Card improvements for mobile */
+.card {
+  margin-bottom: 1rem;
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+  border: 0;
+  border-radius: 0.25rem;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  padding: 0.75rem 1rem;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+/* Fix button spacing */
+.btn {
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Fix form spacing */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Fix alert spacing */
+.alert {
+  margin-bottom: 1rem;
+}
+
+/* Fix main footer */
+.main-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 1rem;
+  font-size: 0.875rem;
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  right: 0;
+  height: 49px;
+  z-index: 1032;
+  transition: left 0.3s ease;
+}
+
+/* Fix content area to account for fixed footer */
+.content-wrapper {
+  padding-bottom: 49px;
+  margin-top: 57px;
+  padding-top: 0;
+  width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+/* Fix content header positioning to avoid navbar overlap */
+.content-header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  position: relative;
+  top: 0;
+  z-index: 1020;
+  margin-top: 20px !important;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  transform: translateY(0) !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Fix navbar z-index and positioning */
+.main-header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 57px;
+  z-index: 1034;
+  background: white;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Ensure content starts below navbar */
+.content-wrapper {
+  margin-top: 57px;
+  padding-top: 20px;
+  min-height: calc(100vh - 57px - 49px) !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Fix content sections */
+.content {
+  padding: 1rem 0.5rem;
+  min-height: calc(100vh - 57px - 49px - 120px);
+  width: 100%;
+  max-width: none !important;
+  margin-top: 0 !important;
+  padding-top: 1rem !important;
+}
+
+/* Fix card body padding for tables */
+.card-body {
+  padding: 1rem !important;
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+  position: relative;
+}
+
+/* Ensure table container allows horizontal scroll */
+.card-body > .table-responsive:last-child {
+  margin-bottom: 0 !important;
+  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px) !important;
+}
+
+.container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Table specific responsive improvements */
+.table-wrapper {
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+  max-height: none;
+  position: relative;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  background: white;
+  width: 100%;
+  display: block;
+}
+
+/* Specific fix for card body table container */
+.card-body > .table-responsive {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+  -webkit-overflow-scrolling: touch !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+/* Make table header sticky */
+.table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa;
+  z-index: 10;
+  border-top: 0;
+  border-bottom: 2px solid #dee2e6;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure table doesn't cause layout issues */
+.table {
+  margin-bottom: 0 !important;
+  width: auto !important;
+  min-width: 100% !important;
+  max-width: none !important;
+  table-layout: auto !important;
+}
+
+/* Force horizontal scroll for wide tables */
+.table-responsive {
+  overflow-x: scroll !important;
+  overflow-y: visible !important;
+  -webkit-overflow-scrolling: touch !important;
+  width: 100% !important;
+  display: block !important;
+  position: relative !important;
+  scrollbar-width: thin;
+  scrollbar-color: #6c757d #f1f1f1;
+  min-height: 0.01%;
+  max-width: 100vw;
+}
+
+/* Ensure table width for horizontal scroll */
+.table-responsive > .table {
+  width: auto !important;
+  min-width: 100% !important;
+  max-width: none !important;
+  margin-bottom: 0 !important;
+}
+
+/* Fix table cell sizing for horizontal scroll */
+.table-responsive th,
+.table-responsive td {
+  white-space: nowrap !important;
+  min-width: 120px !important;
+  max-width: 300px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Ensure horizontal scrollbar is always visible */
+.table-responsive {
+  scrollbar-width: thin;
+  scrollbar-color: #6c757d #f1f1f1;
+}
+
+.table-responsive::-webkit-scrollbar {
+  height: 10px;
+  background-color: #f1f1f1;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #6c757d;
+  border-radius: 5px;
+  min-height: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #495057;
+}
+
+/* Force scrollbar visibility */
+.table-responsive {
+  overflow-x: scroll !important;
+  overflow-y: visible !important;
+}
+
+/* Fix table cell content */
+.table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+/* Make action buttons visible */
+.table .btn-group {
+  white-space: nowrap;
+}
+
+/* Fix for long content */
+.table td[data-long-content="true"] {
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Table cell content styling */
+.table-cell-content {
+  font-size: 0.875rem;
+  line-height: 1.2;
+}
+
+.table-cell-content.long-content {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.table-cell-content.long-content:hover {
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 2px;
+}
+
+/* Ensure proper table layout */
+.table-responsive table {
+  table-layout: auto !important;
+  width: auto !important;
+  min-width: 100% !important;
+}
+
+/* Prevent table overflow */
+.card-body .table-responsive {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}
+
+/* Ensure horizontal scrollbar is always visible */
+.table-responsive {
+  overflow-x: scroll !important;
+  overflow-y: visible !important;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #6c757d #f1f1f1;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  position: relative;
+  min-height: 0.01%;
+  -ms-overflow-style: scrollbar !important;
+}
+
+/* Custom scrollbar styling */
+.table-responsive::-webkit-scrollbar {
+  height: 12px !important;
+  background-color: #f1f1f1 !important;
+  border-radius: 6px !important;
+  width: 12px !important;
+}
+
+/* Make scrollbar always visible */
+.table-responsive {
+  scrollbar-gutter: stable !important;
+}
+
+/* Force scrollbar visibility */
+.table-responsive::-webkit-scrollbar {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+.table-responsive::-webkit-scrollbar:horizontal {
+  height: 12px !important;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:horizontal {
+  background-color: #6c757d !important;
+  border-radius: 6px !important;
+  border: 2px solid #f1f1f1 !important;
+  min-height: 8px !important;
+}
+
+.table-responsive::-webkit-scrollbar-track:horizontal {
+  background-color: #f1f1f1 !important;
+  border-radius: 6px !important;
+  border: 1px solid #dee2e6 !important;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+  border-radius: 6px !important;
+  border: 1px solid #ddd !important;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #6c757d !important;
+  border-radius: 6px !important;
+  border: 1px solid #495057 !important;
+  min-height: 8px !important;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #495057 !important;
+}
+
+/* Mobile table improvements */
+@media (max-width: 767.98px) {
+  .table {
+    table-layout: auto !important;
+  }
+  
+  .table th,
+  .table td {
+    white-space: nowrap !important;
+    min-width: 80px !important;
+  }
+  
+  /* Make action buttons smaller */
+  .btn-group-sm .btn {
+    font-size: 0.65rem !important;
+    padding: 0.15rem 0.25rem !important;
+    margin: 0 1px !important;
+  }
+  
+  /* Hide some columns on very small screens */
+  @media (max-width: 480px) {
+    .table th:nth-child(n+6),
+    .table td:nth-child(n+6) {
+      display: none !important;
+    }
+    
+    .table th:last-child,
+    .table td:last-child {
+      display: table-cell !important;
+    }
+  }
+}
+
+/* Fix user panel */
+.user-panel {
+  border-bottom: 1px solid #4f5962;
+  padding: 1rem;
+}
+
+.user-panel .info {
+  padding: 5px 5px 5px 15px;
+  line-height: 1;
+  position: static;
+  display: inline-block;
+}
+
+/* Fix brand link */
+.brand-link {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding: 0.8125rem 0.5rem;
+  transition: width 0.3s ease-in-out;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.brand-link .brand-image {
+  float: left;
+  line-height: 0.8;
+  margin-left: 0.8rem;
+  margin-right: 0.5rem;
+  margin-top: -3px;
+  max-height: 33px;
+  width: auto;
+}
+
+/* Fix elevation shadows */
+.elevation-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;
+}
+
+/* Fix content spacing */
+.content {
+  padding: 1.5rem 0.5rem;
+}
+
+.container-fluid {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Fix row spacing */
+.row {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.col-lg-3, .col-6, .col-12 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Fix loading spinner */
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fix navigation icons */
+.nav-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 1.6rem;
+}
+
+/* Fix link colors */
+.nav-link {
+  color: #c2c7d0;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link.active {
+  background-color: rgba(255,255,255,.1);
+  color: #ffffff;
+}
+
+/* Fix text colors */
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.text-info {
+  color: #17a2b8 !important;
+}
+
+.text-warning {
+  color: #ffc107 !important;
+}
+
+/* Improve color contrast for better readability */
+body {
+  color: #343a40;
+  font-weight: 400;
+}
+
+.breadcrumb-item a {
+  color: #007bff;
+  font-weight: 500;
+}
+
+.breadcrumb-item.active {
+  color: #495057;
+  font-weight: 500;
+}
+
+.nav-sidebar .nav-link {
+  color: #e9ecef;
+  font-weight: 400;
+}
+
+.nav-sidebar .nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255,255,255,.15);
+}
+
+.nav-sidebar .nav-link.active {
+  color: #ffffff;
+  background-color: rgba(255,255,255,.25);
+  font-weight: 500;
+}
+
+.nav-header {
+  color: #adb5bd;
+  font-weight: 600;
+}
+
+.user-panel .info a {
+  color: #e9ecef;
+  font-weight: 500;
+}
+
+.user-panel .info a:hover {
+  color: #ffffff;
+}
+
+/* Fix content text colors */
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  color: #212529;
+  font-weight: 600;
+}
+
+.content p {
+  color: #495057;
+  font-weight: 400;
+}
+
+/* Fix card text colors */
+.card-title {
+  color: #212529;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #495057;
+}
+
+/* Fix table text colors */
+.table {
+  color: #343a40;
+}
+
+.table th {
+  color: #212529;
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+.table td {
+  color: #495057;
+}
+
+/* Fix form text colors */
+.form-group label {
+  color: #212529;
+  font-weight: 600;
+}
+
+.form-control {
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Fix background colors */
+.bg-info {
+  background-color: #17a2b8 !important;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+/* Fix badge colors */
+.badge-info {
+  background-color: #17a2b8;
+  color: #ffffff;
+}
+
+/* Fix pagination */
+.page-link {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.page-link:hover {
+  color: #0056b3;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Fix select dropdown */
+.form-control {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  padding: 0.375rem 0.75rem;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Fix textarea */
+textarea.form-control {
+  resize: vertical;
+}
+
+/* Fix button primary */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+}
+
+/* Fix button secondary */
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/* Fix margin utilities */
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.ml-2 {
+  margin-left: 0.5rem !important;
+}
+
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
+
+/* Fix padding utilities */
+.p-3 {
+  padding: 1rem !important;
+}
+
+.p-4 {
+  padding: 1.5rem !important;
+}
+
+.pb-3 {
+  padding-bottom: 1rem !important;
+}
+
+.pt-3 {
+  padding-top: 1rem !important;
+}
+
+/* Fix float utilities */
+.float-sm-right {
+  float: right !important;
+}
+
+/* Fix text alignment */
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+/* Fix font weights */
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+/* Fix display utilities */
+.d-block {
+  display: block !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+/* Fix flex utilities */
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+/* Fix width utilities */
+.w-100 {
+  width: 100% !important;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+/* Fix table styles */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  background-color: transparent;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0,0,0,.05);
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+/* Additional fixes for better spacing and alignment */
+.main-header .navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.main-header .navbar-nav .nav-link:hover {
+  background-color: rgba(0,0,0,.1);
+}
+
+.nav-sidebar .nav-link.active {
+  background-color: rgba(255,255,255,.1);
+  color: #ffffff;
+}
+
+.nav-sidebar .nav-link.active:hover {
+  background-color: rgba(255,255,255,.15);
+}
+
+/* Fix card body spacing */
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-header .card-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* Fix small box title spacing */
+.small-box h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.small-box p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Fix breadcrumb item spacing */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #6c757d;
+}
+
+/* Fix dropdown menu spacing */
+.dropdown-menu {
+  border: 0;
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+  margin-top: 0;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover {
+  background-color: #e9ecef;
+}
+
+/* Fix modal spacing */
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Fix alert spacing */
+.alert {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+/* Fix pagination spacing */
+.pagination {
+  margin: 1rem 0;
+}
+
+.page-link {
+  padding: 0.375rem 0.75rem;
+}
+
+/* Fix form group spacing */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Fix textarea spacing */
+textarea.form-control {
+  padding: 0.375rem 0.75rem;
+}
+
+/* Fix button group spacing */
+.btn-group .btn {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+/* Fix table header background */
+.table-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table-dark th {
+  border-color: #454d55;
+}
+
+/* Fix responsive table spacing */
+@media (max-width: 767.98px) {
+  .table-responsive {
+    font-size: 0.875rem;
+  }
+  
+  .table-responsive .btn {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* Comprehensive mobile responsive fixes */
+@media (max-width: 767.98px) {
+  /* Fix sidebar collapse */
+  .main-sidebar {
+    position: fixed !important;
+    top: 57px !important;
+    left: -250px !important;
+    height: calc(100vh - 57px) !important;
+    width: 250px !important;
+    transition: left 0.3s ease !important;
+    z-index: 1033 !important;
+  }
+  
+  .main-sidebar.sidebar-open {
+    left: 0 !important;
+  }
+  
+  /* Sidebar overlay */
+  .sidebar-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: rgba(0,0,0,0.5) !important;
+    z-index: 1032 !important;
+  }
+  
+  /* Fix content wrapper when sidebar is collapsed */
+  .content-wrapper {
+    margin-left: 0 !important;
+    width: 100% !important;
+    transition: margin-left 0.3s ease !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Fix footer positioning */
+  .main-footer {
+    left: 0 !important;
+    width: 100% !important;
+    position: relative !important;
+    margin-top: 1rem !important;
+  }
+  
+  /* Fix content padding */
+  .content {
+    padding: 1rem 0.5rem !important;
+    min-height: calc(100vh - 57px - 49px - 120px) !important;
+  }
+  
+  /* Fix card tools */
+  .card-tools {
+    float: none !important;
+    margin-top: 0.5rem !important;
+    text-align: right !important;
+  }
+  
+  /* Fix navbar */
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.5rem !important;
+  }
+  
+  /* Fix breadcrumb */
+  .breadcrumb {
+    font-size: 0.875rem !important;
+    flex-wrap: wrap !important;
+  }
+  
+  /* Fix small boxes */
+  .small-box {
+    text-align: center !important;
+  }
+  
+  .small-box .icon {
+    display: none !important;
+  }
+  
+  /* Fix table actions */
+  .btn-group-sm .btn {
+    font-size: 0.7rem !important;
+    padding: 0.2rem 0.3rem !important;
+  }
+  
+  /* Fix form controls */
+  .form-control {
+    font-size: 0.875rem !important;
+  }
+  
+  /* Fix modal */
+  .modal-dialog {
+    margin: 0.5rem !important;
+  }
+  
+  .modal-body {
+    padding: 1rem !important;
+  }
+}
+
+/* Fix sidebar brand spacing */
+.brand-link {
+  border-bottom: 1px solid #4f5962;
+}
+
+/* Fix user panel info */
+.user-panel .info {
+  padding: 5px 5px 5px 15px;
+  line-height: 1;
+  position: static;
+  display: inline-block;
+}
+
+.user-panel .info a {
+  color: #c2c7d0;
+  text-decoration: none;
+}
+
+.user-panel .info a:hover {
+  color: #ffffff;
+}
+
+/* Fix nav header */
+.nav-header {
+  background-color: transparent;
+  color: #6c757d;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  border-bottom: 0;
+}
+
+/* Fix nav icon alignment */
+.nav-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 1.6rem;
+  display: inline-block;
+}
+
+/* Fix main content area */
+.content-wrapper > .content {
+  padding: 1.5rem 0.5rem;
+  overflow-x: hidden;
+}
+
+/* Fix footer alignment */
+.main-footer {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Fix loading states */
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Fix empty state */
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6c757d;
+}
+
+.empty-state .empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.empty-state .empty-state-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.empty-state .empty-state-description {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+/* Fix error state */
+.error-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #dc3545;
+}
+
+.error-state .error-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.error-state .error-state-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.error-state .error-state-description {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: #6c757d;
+}
+
+/* Fix success state */
+.success-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #28a745;
+}
+
+.success-state .success-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.success-state .success-state-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.success-state .success-state-description {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: #6c757d;
+}
+
+/* Fix responsive utilities */
+@media (max-width: 767.98px) {
+  .content-header {
+    padding: 0.75rem 1rem;
+  }
+  
+  .content-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .breadcrumb {
+    font-size: 0.875rem;
+  }
+  
+  .small-box {
+    margin-bottom: 1rem;
+  }
+  
+  .small-box h3 {
+    font-size: 1.8rem;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .table-responsive {
+    margin-top: 0.5rem;
+  }
+  
+  .btn {
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 0.75rem;
+  }
+  
+  .pagination {
+    margin: 0.5rem 0;
+  }
+  
+  .main-footer {
+    font-size: 0.75rem;
+    padding: 0.75rem;
+  }
+  
+  /* Fix mobile layout */
+  .main-sidebar {
+    width: 200px;
+  }
+  
+  .content-wrapper {
+    margin-left: 200px;
+  }
+  
+  .main-footer {
+    left: 200px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .content-header {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .content-header h1 {
+    font-size: 1.25rem;
+  }
+  
+  .breadcrumb {
+    font-size: 0.75rem;
+  }
+  
+  .small-box h3 {
+    font-size: 1.5rem;
+  }
+  
+  .card-body {
+    padding: 0.75rem;
+  }
+  
+  .btn {
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  .form-control {
+    font-size: 0.875rem;
+  }
+  
+  .main-footer {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+  
+  /* Fix mobile sidebar */
+  .main-sidebar {
+    width: 180px;
+  }
+  
+  .content-wrapper {
+    margin-left: 180px;
+  }
+  
+  .main-footer {
+    left: 180px;
+  }
+}
+
+/* Fix overflow and scrollbar issues */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove unwanted scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Fix main content overflow */
+.content-wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Fix sidebar overflow */
+.main-sidebar {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Fix content area overflow */
+.content {
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+/* Fix table overflow */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fix card overflow */
+.card {
+  overflow: hidden;
+}
+
+.card-body {
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+/* Fix modal overflow */
+.modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal-body {
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+}
+
+/* Fix dropdown overflow */
+.dropdown-menu {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Fix critical layout issues */
+.main-sidebar {
+  position: fixed !important;
+  top: 57px !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 250px !important;
+  z-index: 1033 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  background-color: #343a40 !important;
+}
+
+/* Ensure content doesn't overlap with fixed navbar */
+.content-header {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  margin-top: 0 !important;
+  position: relative !important;
+  z-index: 1020 !important;
+  background-color: #f8f9fa !important;
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.content-wrapper {
+  margin-left: 250px !important;
+  margin-top: 57px !important;
+  margin-bottom: 49px !important;
+  min-height: calc(100vh - 57px - 49px) !important;
+  overflow-x: hidden !important;
+  background-color: #f4f6f9 !important;
+}
+
+.main-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 57px !important;
+  z-index: 1034 !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.main-footer {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 250px !important;
+  right: 0 !important;
+  height: 49px !important;
+  z-index: 1032 !important;
+  background-color: #f8f9fa !important;
+  border-top: 1px solid #dee2e6 !important;
+}
+
+/* Remove any unwanted scrollbars */
+body {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+.wrapper {
+  overflow: hidden !important;
+  min-height: 100vh !important;
+}
+
+/* Fix content area */
+.content {
+  padding: 1.5rem 1rem !important;
+  min-height: calc(100vh - 57px - 49px - 120px) !important;
+  overflow-y: visible !important;
+  overflow-x: hidden !important;
+  margin-top: 0 !important;
+  padding-top: 1rem !important;
+}
+
+/* Fix table responsive */
+.table-responsive {
+  overflow-x: scroll !important;
+  overflow-y: visible !important;
+  -webkit-overflow-scrolling: touch !important;
+  border: 1px solid #dee2e6 !important;
+  border-radius: 0.25rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  position: relative !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: #6c757d #f1f1f1 !important;
+}
+
+/* Fix card layout */
+.card {
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2) !important;
+  border: 0 !important;
+  margin-bottom: 1.5rem !important;
+  overflow: hidden !important;
+}
+
+.card-body {
+  padding: 1.5rem !important;
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+}
+
+/* Fix sidebar navigation */
+.nav-sidebar {
+  margin-top: 1rem !important;
+}
+
+.nav-sidebar .nav-link {
+  padding: 0.75rem 1rem !important;
+  margin-bottom: 0.2rem !important;
+  border-radius: 0.25rem !important;
+  color: #c2c7d0 !important;
+  font-weight: 400 !important;
+}
+
+.nav-sidebar .nav-link:hover {
+  background-color: rgba(255,255,255,.1) !important;
+  color: #ffffff !important;
+}
+
+.nav-sidebar .nav-link.active {
+  background-color: rgba(255,255,255,.25) !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+/* Fix brand link */
+.brand-link {
+  display: block !important;
+  font-size: 1.25rem !important;
+  line-height: 1.5 !important;
+  padding: 0.8125rem 0.5rem !important;
+  text-align: center !important;
+  background-color: #343a40 !important;
+  border-bottom: 1px solid #4f5962 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 300 !important;
+}
+
+.brand-link:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* Fix user panel */
+.user-panel {
+  border-bottom: 1px solid #4f5962 !important;
+  padding: 1rem !important;
+  text-align: center !important;
+}
+
+.user-panel .info {
+  padding: 0.5rem 0 !important;
+  line-height: 1 !important;
+  position: static !important;
+  display: block !important;
+}
+
+.user-panel .info a {
+  color: #c2c7d0 !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+
+.user-panel .info a:hover {
+  color: #ffffff !important;
+}
+
+/* Fix nav header */
+.nav-header {
+  background-color: transparent !important;
+  color: #6c757d !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  padding: 0.75rem 1rem !important;
+  margin-top: 1rem !important;
+  border-bottom: 0 !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* Fix breadcrumb */
+.breadcrumb {
+  background-color: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0.875rem !important;
+}
+
+.breadcrumb-item a {
+  color: #007bff !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+
+.breadcrumb-item a:hover {
+  color: #0056b3 !important;
+  text-decoration: underline !important;
+}
+
+.breadcrumb-item.active {
+  color: #495057 !important;
+  font-weight: 500 !important;
+}
+
+/* Fix main title */
+.content-header h1 {
+  color: #212529 !important;
+  font-weight: 600 !important;
+  font-size: 1.75rem !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+}
+
+/* Fix main content background */
+.content-wrapper {
+  background-color: #f4f6f9 !important;
+}
+
+.content {
+  background-color: transparent !important;
+}
+
+/* Fix table styling for better visibility */
+.table {
+  background-color: #fff !important;
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin-bottom: 1rem !important;
+}
+
+.table th {
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
+  font-weight: 600 !important;
+  border-top: 0 !important;
+  border-bottom: 2px solid #dee2e6 !important;
+  padding: 0.75rem !important;
+  vertical-align: bottom !important;
+}
+
+.table td {
+  color: #495057 !important;
+  padding: 0.75rem !important;
+  vertical-align: top !important;
+  border-top: 1px solid #dee2e6 !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0,0,0,.05) !important;
+}
+
+/* Fix small boxes */
+.small-box {
+  border-radius: 0.25rem !important;
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2) !important;
+  margin-bottom: 1.5rem !important;
+  display: block !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background: #fff !important;
+}
+
+.small-box > .inner {
+  padding: 1.5rem !important;
+}
+
+.small-box h3 {
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  margin: 0 0 10px 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  color: #fff !important;
+  z-index: 5 !important;
+  position: relative !important;
+}
+
+.small-box p {
+  font-size: 1rem !important;
+  margin: 0 !important;
+  color: rgba(255,255,255,.8) !important;
+  z-index: 5 !important;
+  position: relative !important;
+}
+
+.small-box .icon {
+  top: 1rem !important;
+  right: 1rem !important;
+  font-size: 4rem !important;
+  color: rgba(255,255,255,.3) !important;
+  position: absolute !important;
+  z-index: 0 !important;
+}
+
+.small-box .small-box-footer {
+  background-color: rgba(0,0,0,.1) !important;
+  color: rgba(255,255,255,.8) !important;
+  display: block !important;
+  padding: 0.75rem 1.5rem !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  z-index: 10 !important;
+}
+
+.small-box .small-box-footer:hover {
+  background-color: rgba(0,0,0,.15) !important;
+  color: #fff !important;
+}
+
+/* Fix button colors */
+.btn {
+  font-weight: 400 !important;
+  border-radius: 0.25rem !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+.btn-primary {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3 !important;
+  border-color: #0056b3 !important;
+}
+
+.btn-secondary {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  color: #fff !important;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268 !important;
+  border-color: #545b62 !important;
+}
+
+/* Fix form controls */
+.form-control {
+  border-radius: 0.25rem !important;
+  border: 1px solid #ced4da !important;
+  color: #495057 !important;
+  background-color: #fff !important;
+  font-weight: 400 !important;
+}
+
+.form-control:focus {
+  border-color: #80bdff !important;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25) !important;
+  color: #495057 !important;
+  background-color: #fff !important;
+}
+
+.form-group label {
+  color: #212529 !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Fix alerts */
+.alert {
+  border: 1px solid transparent !important;
+  border-radius: 0.25rem !important;
+  font-weight: 400 !important;
+}
+
+.alert-danger {
+  background-color: #f8d7da !important;
+  border-color: #f5c6cb !important;
+  color: #721c24 !important;
+}
+
+.alert-success {
+  background-color: #d4edda !important;
+  border-color: #c3e6cb !important;
+  color: #155724 !important;
+}
+
+.alert-info {
+  background-color: #d1ecf1 !important;
+  border-color: #bee5eb !important;
+  color: #0c5460 !important;
+}
+
+.alert-warning {
+  background-color: #fff3cd !important;
+  border-color: #ffeaa7 !important;
+  color: #856404 !important;
+}
+
+/* Fix pagination */
+.pagination {
+  margin: 1rem 0 !important;
+}
+
+.page-link {
+  color: #007bff !important;
+  background-color: #fff !important;
+  border: 1px solid #dee2e6 !important;
+  font-weight: 400 !important;
+}
+
+.page-link:hover {
+  color: #0056b3 !important;
+  background-color: #e9ecef !important;
+  border-color: #dee2e6 !important;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+  color: #fff !important;
+}
+
+/* Fix main footer */
+.main-footer {
+  background-color: #f8f9fa !important;
+  border-top: 1px solid #dee2e6 !important;
+  color: #6c757d !important;
+  font-size: 0.875rem !important;
+  text-align: center !important;
+  padding: 1rem !important;
+  font-weight: 400 !important;
+}
+
+/* Fix responsive behavior */
+@media (max-width: 991.98px) {
+  .main-sidebar {
+    width: 200px !important;
+  }
+  
+  .content-wrapper {
+    margin-left: 200px !important;
+  }
+  
+  .main-footer {
+    left: 200px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main-sidebar {
+    width: 180px !important;
+  }
+  
+  .content-wrapper {
+    margin-left: 180px !important;
+  }
+  
+  .main-footer {
+    left: 180px !important;
+  }
+  
+  .content-header h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  .breadcrumb {
+    font-size: 0.875rem !important;
+  }
+  
+  .small-box h3 {
+    font-size: 1.8rem !important;
+  }
+  
+  .card-body {
+    padding: 1rem !important;
+  }
+  
+  .table-responsive {
+    font-size: 0.875rem !important;
+  }
+  
+  .btn {
+    font-size: 0.875rem !important;
+    padding: 0.375rem 0.75rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Ultra small screens */
+  .main-sidebar {
+    width: 160px !important;
+  }
+  
+  .content-wrapper {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  
+  .main-footer {
+    left: 0 !important;
+    width: 100% !important;
+  }
+  
+  .content-header h1 {
+    font-size: 1.25rem !important;
+  }
+  
+  .breadcrumb {
+    font-size: 0.75rem !important;
+  }
+  
+  .small-box h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .card-body {
+    padding: 0.75rem !important;
+  }
+  
+  .form-control {
+    font-size: 0.875rem !important;
+  }
+  
+  .main-footer {
+    font-size: 0.75rem !important;
+    padding: 0.75rem !important;
+  }
+  
+  /* Additional fixes for very small screens */
+  .content-header {
+    padding: 0.75rem !important;
+  }
+  
+  .card-header {
+    padding: 0.5rem !important;
+  }
+  
+  .card-title {
+    font-size: 1rem !important;
+  }
+  
+  .btn-sm {
+    font-size: 0.7rem !important;
+    padding: 0.2rem 0.4rem !important;
+  }
+  
+  /* Table improvements for very small screens */
+  .table-responsive {
+    margin: 0 -0.75rem !important;
+    padding: 0 0.75rem !important;
+    overflow-x: scroll !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    display: block !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  
+  .table-responsive table {
+    font-size: 0.75rem !important;
+  }
+  
+  .table-responsive th,
+  .table-responsive td {
+    padding: 0.4rem 0.3rem !important;
+  }
+  
+  /* Fix modal for very small screens */
+  .modal-dialog {
+    margin: 0.25rem !important;
+  }
+  
+  .modal-header {
+    padding: 0.75rem !important;
+  }
+  
+  .modal-body {
+    padding: 0.75rem !important;
+  }
+  
+  .modal-footer {
+    padding: 0.75rem !important;
+  }
+}
+
+/* Fix print styles */
+@media print {
+  .main-header,
+  .main-sidebar,
+  .main-footer {
+    display: none !important;
+  }
+  
+  .content-wrapper {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    min-height: auto !important;
+  }
+  
+  .card {
+    box-shadow: none !important;
+    border: 1px solid #dee2e6;
+  }
+  
+  .table {
+    border-collapse: collapse !important;
+  }
+  
+  .table td,
+  .table th {
+    background-color: #fff !important;
+    border: 1px solid #dee2e6 !important;
+  }
+}

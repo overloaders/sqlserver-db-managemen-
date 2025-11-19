@@ -1,0 +1,92 @@
+:root {
+  --bs-primary: #7c3aed;
+  --bs-secondary: #64748b;
+  --bs-info: #06b6d4;
+  --bs-success: #22c55e;
+  --bs-warning: #f59e0b;
+  --bs-danger: #ef4444;
+  --bs-body-bg: #f6f8fb;
+  --bs-body-color: #0f172a;
+  --bs-border-color: #e5e7eb;
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+.app-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.app-footer {
+  background-color: #ffffff;
+  border-top: 1px solid var(--bs-border-color);
+}
+
+.app-sidebar {
+  background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+  --lte-sidebar-color: #cbd5e1;
+  --lte-sidebar-hover-bg: rgba(255, 255, 255, 0.08);
+  --lte-sidebar-hover-color: #ffffff;
+  --lte-sidebar-active-color: #ffffff;
+  --lte-sidebar-menu-active-bg: rgba(255, 255, 255, 0.12);
+  --lte-sidebar-menu-active-color: #ffffff;
+  --lte-sidebar-submenu-bg: transparent;
+  --lte-sidebar-submenu-color: #94a3b8;
+  --lte-sidebar-submenu-hover-color: #ffffff;
+  --lte-sidebar-submenu-hover-bg: rgba(255, 255, 255, 0.08);
+  --lte-sidebar-submenu-active-color: #ffffff;
+  --lte-sidebar-submenu-active-bg: rgba(255, 255, 255, 0.12);
+  --lte-sidebar-header-color: #9ca3af;
+}
+
+.brand-link {
+  color: #e5e7eb;
+}
+
+.nav-sidebar .nav-link {
+  border-radius: 0.5rem;
+}
+
+.small-box.bg-primary {
+  background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%) !important;
+  color: #ffffff;
+}
+
+.small-box.bg-info {
+  background: linear-gradient(135deg, #06b6d4 0%, #67e8f9 100%) !important;
+  color: #0c4a6e;
+}
+
+.small-box.bg-success {
+  background: linear-gradient(135deg, #22c55e 0%, #86efac 100%) !important;
+  color: #064e3b;
+}
+
+.small-box.bg-warning {
+  background: linear-gradient(135deg, #f59e0b 0%, #fcd34d 100%) !important;
+  color: #7c2d12;
+}
+
+.small-box.bg-info .small-box-footer,
+.small-box.bg-success .small-box-footer,
+.small-box.bg-warning .small-box-footer,
+.small-box.bg-primary .small-box-footer {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+}
+
+.table thead th {
+  background-color: #f8fafc;
+}
+
+.breadcrumb a {
+  color: var(--bs-primary);
+}

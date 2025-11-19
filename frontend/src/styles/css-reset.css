@@ -1,0 +1,182 @@
+/* CSS Reset untuk membersihkan tampilan */
+
+/* Reset semua margin dan padding yang berlebihan */
+* {
+  box-sizing: border-box;
+}
+
+/* Bersihkan layout yang berantakan */
+.content-wrapper,
+.content,
+.container-fluid,
+.row,
+.col,
+.card,
+.card-body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+}
+
+/* Kembalikan spacing yang proporsional */
+.content-wrapper {
+  margin-left: 250px !important;
+  margin-top: 57px !important;
+  margin-bottom: 49px !important;
+  padding: 0 !important;
+}
+
+.content {
+  padding: 1.5rem !important;
+  margin: 0 !important;
+}
+
+.container-fluid {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  margin: 0 !important;
+}
+
+.row {
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+  padding: 0 !important;
+}
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  margin: 0 !important;
+}
+
+.card {
+  margin-bottom: 1.5rem !important;
+  padding: 0 !important;
+}
+
+.card-body {
+  padding: 1.25rem !important;
+  margin: 0 !important;
+}
+
+/* Bersihkan header yang berantakan */
+.content-header {
+  margin: 0 !important;
+  padding: 1rem 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Bersihkan tabel yang berantakan */
+.table-responsive {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 1px solid #dee2e6 !important;
+  border-radius: 0.25rem !important;
+  overflow-x: auto !important;
+  margin-bottom: 1rem !important;
+}
+
+.table {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-bottom: 0 !important;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem !important;
+  margin: 0 !important;
+}
+
+/* Bersihkan footer */
+.main-footer {
+  margin: 0 !important;
+  padding: 1rem !important;
+  height: 49px !important;
+  line-height: 1 !important;
+}
+
+/* Bersihkan navbar */
+.main-header {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 57px !important;
+  line-height: 1 !important;
+}
+
+.main-sidebar {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 250px !important;
+  top: 57px !important;
+  bottom: 0 !important;
+}
+
+/* Hilangkan overflow yang tidak perlu */
+html, body {
+  overflow-x: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.wrapper {
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Perbaikan untuk mobile */
+@media (max-width: 767.98px) {
+  .content-wrapper {
+    margin-left: 0 !important;
+    margin-top: 57px !important;
+    margin-bottom: 49px !important;
+  }
+  
+  .main-footer {
+    left: 0 !important;
+    width: 100% !important;
+  }
+  
+  .main-sidebar {
+    width: 180px !important;
+    transform: translateX(-180px) !important;
+  }
+  
+  .content {
+    padding: 1rem !important;
+  }
+  
+  .container-fluid {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .content-header {
+    padding: 0.75rem 1rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .content {
+    padding: 0.75rem !important;
+  }
+  
+  .container-fluid {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  .content-header {
+    padding: 0.5rem 0.75rem !important;
+  }
+  
+  .main-sidebar {
+    width: 160px !important;
+    transform: translateX(-160px) !important;
+  }
+}
